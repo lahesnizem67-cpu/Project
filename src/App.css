@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue",
+    sans-serif;
+  background: #faf9f8;
+  color: #1b1b1b;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 24px;
+}
+
+.logo {
+  width: 72px;
+  height: 52px;
+  margin-bottom: 30px;
+  filter: drop-shadow(0 9px 4px rgba(0, 120, 212, 0.12));
+}
+
+.title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin: 0 0 22px;
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #605e5c;
+  margin: 0 0 22px;
+}
+
+.progressTrack {
+  width: 262px;
+  height: 4px;
+  background: #edebe9;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  width: 0%;
+  background: #0078d4;
+  border-radius: 999px;
+  transition: width 80ms linear;
+}
+
+.progressLabel {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #605e5c;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+  min-width: 3ch;
+  text-align: center;
+}
+
+.fallback {
+  margin: 12px 0 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #605e5c;
+}
+
+.fallback a {
+  color: #0078d4;
+}
+
+.microsoft {
+  margin-top: 38px;
+  color: #a19f9d;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
